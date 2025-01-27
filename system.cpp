@@ -26,4 +26,11 @@ void System::updateRule() {
 double System::uniform(double min,double max) {
     return (max-min)*this->uniformDist(gen)+min;
 
+void System::randomStart(){
+    for (Particle &p : this->simulationBox.getSidex());
+        p.x = this->uniform(0,this->simulationBox.getSidex());
+        p.y = this->uniform(0,this->simulationBox.getSidex());
+        p.theta = this->uniform(-M_PI,M_PI);
+}
+
 }

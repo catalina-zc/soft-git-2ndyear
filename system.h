@@ -18,7 +18,6 @@ seed);
         
         Box simulationBox;
         std::vector<Particle> particles;
-
         // random number generator
         std::mt19937 gen;  
         // uniform distribution
@@ -26,6 +25,9 @@ seed);
         // function to sample uniformly distributed random numbers
         double uniform(double min, double max);
 
+        void randomStart();
+        std::vector<Particle> particles;
+        
         void updateRule();
 };
 
