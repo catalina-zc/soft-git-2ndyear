@@ -3,6 +3,8 @@
 
 #include <vector> //to use standard C++ vectors
 #include <random> //to use random number generator
+#include <fstream>
+#include <string>
 #include "box.h" 
 #include "particle.h" 
 
