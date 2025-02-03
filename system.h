@@ -26,11 +26,11 @@ seed);
         double uniform(double min, double max);
 
         void randomStart();
-        std::vector<Particle> particles;
+        //std::vector<Particle> particles;
         
         void updateRule();
 
-        void saveConfig(const std::string &filename)
+        void saveConfig(const std::string &filename);
 
         void initialize();
 
