@@ -29,6 +29,11 @@ seed);
         std::vector<Particle> particles;
         
         void updateRule();
+
+        void saveConfig(const std::string &filename)
+
+        void initialize();
+
 };
 
 #endif
