@@ -46,9 +46,9 @@ def animate(i):
     return qv,
     
 # Create the animation
-anim = FuncAnimation(fig,animate, range(len(files)))
+anim = FuncAnimation(fig,animate, range(len(files)), interval = 100)
 # Show the animation
 
-anim.save("vicsek_anim.mp4")
+anim.save("vicsek_anim.mp4", writer = 'ffmpeg', fps=30)
 
 plt.show() 
