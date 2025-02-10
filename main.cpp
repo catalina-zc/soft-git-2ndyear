@@ -19,7 +19,7 @@ int main(){
     std::string root = "frames/frame";
     for (int iteration = 0; iteration <iterations;iteration++)
     {   std::cout<<"iteration"<<iteration<<std::endl;
-        if (iteration%5==0) model.saveConfig( root+std::to_string(iteration));
+        if (iteration%5==0) model.saveConfig(root+std::to_string(iteration));
         model.updateRule();
     }
     
