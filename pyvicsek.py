@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 def read_config(filename, skip=2):
     """Reading an vicsek configuration from a file handle"""
