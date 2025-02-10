@@ -1,13 +1,7 @@
 #include <iostream>
 #include "system.h"
 #include <cstdlib>  // For std::stof (string to float)
-
-int main(int argc, char* argv[]) {
-        // Convert the string argument to a float
-        double noiseStrength = std::stof(argv[1]);
  
-}
-
 int main(){
     int N = 100;
     double L = 20.0;
@@ -15,6 +9,8 @@ int main(){
     double noise = 0.1;
     int seed = 12345;
     long int iterations = 1000;
+
+    double noiseStrength = std::stof(argv[1]);
 
     System model(N, L, dt, noise,seed);
 
