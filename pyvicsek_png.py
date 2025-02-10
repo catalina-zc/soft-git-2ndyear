@@ -27,4 +27,5 @@ def plot(conf,ax):
 conf = read_config("init.conf")
 
 fig, ax = plt.subplots()
-plot(conf, ax)
+plot(conf,ax)
+plt.savefig("vicsek_arrows.png")

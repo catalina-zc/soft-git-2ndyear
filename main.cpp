@@ -8,11 +8,10 @@ int main(){
     double dt = 0.5;
     double noise = 0.1;
     int seed = 12345;
-    long int iterations = 1000;
-
-    double noiseStrength = std::stof(argv[1]);
 
     System model(N, L, dt, noise,seed);
+
+    //double noiseStrength = std::stof(argv[1]);
 
     std::cout<<"The system contains "<<model.particleNumber<<" particles."<<std::endl;
     std::cout<<"The system has noise "<<model.noiseStrength<<std::endl;
@@ -22,6 +21,7 @@ int main(){
     
     model.saveConfig("init.conf");
     
+    long int iterations = 1000;
     std::string root = "frames/";
     for (int iteration = 0; iteration <iterations;iteration++)
     {   std::cout<<"iteration"<<iteration<<std::endl;
