@@ -29,4 +29,4 @@ conf = read_config("init.conf")
 fig, ax = plt.subplots()
 plot(conf, ax)
 
-plt.savefig("vicsek_arrows_png")
+plt.savefig("vicsek_arrows_png", writer = "ffmpeg", fps=30)

@@ -48,4 +48,7 @@ def animate(i):
 # Create the animation
 anim = FuncAnimation(fig,animate, range(len(files)))
 # Show the animation
-plt.show()
+
+anim.save("vicsek_anim.mp4")
+
+plt.show() 
