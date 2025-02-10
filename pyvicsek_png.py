@@ -23,3 +23,10 @@ def plot(conf,ax):
     qv = ax.quiver(conf["x"], conf["y"], conf["vx"], conf["vy"], conf["theta"], scale=1, scale_units='xy', cmap='hsv')
     plt.axis('equal')
     return qv
+
+conf = read_config("init.conf")
+
+fig, ax = plt.subplots()
+plot(conf, ax)
+
+plt.savefig("vicsek_arrows_png")
